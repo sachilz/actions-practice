@@ -1,11 +1,10 @@
-name: This is manual trigger workflow 2
+name: MANUAL WORKFLOW
 
 on:
-    workflow_dispatch
+  workflow_dispatch:
 
 jobs:
-    hello:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Print a message
-              run: echo "Hello manual trigger workflow"
+  manual-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "✅ This ran because of MANUAL click"
